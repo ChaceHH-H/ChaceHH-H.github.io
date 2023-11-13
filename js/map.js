@@ -224,7 +224,7 @@ function displaylist(data) {
             left: 'center',
             min: 0,
             max: 60,
-            text: ['High Coverage', 'Low Coverage'],
+            text: ['High', 'Low'],
             dimension: 0,
             inRange: {
                 color: ['#edf8e9', '#005a32']

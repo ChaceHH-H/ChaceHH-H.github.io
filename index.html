@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
  <title> Map Page </title>
- <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1"/>
  <link rel="stylesheet" href="./css/Map.css">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -21,18 +21,18 @@
   <!-- top navigation bar -->
   <ul class="topbar">
     <!-- Website name -->
-    <li style="float:left"><a href="#Lnading" class="lia" style="font-size: 22px;"><strong> UCL CASA CHEMS-London Tree Canopy</strong></a></li>
+    <li style="float:left"><a href="#Lnading" class="lia" style="font-size: 22px;"><strong>CHEMS-London Tree Canopy</strong></a></li>
     <!-- Page jump button drop-down -->
     <li style="float:right" class="dropdown">
       <a class="lia" href="javascript:void(0)" class="dropbtn"><i class="fa fa-bars"></i></a>
       <div class="dropdown-content">
-        <a class="lia" href="Map page.html">Map</a>
+        <a class="lia" href="index.html">Map</a>
         <a class="lia" href="insights.html">Insights</a>
       </div>
     </li>
     <!-- Page jump button -->
     <li class="Topbutton" style="float:right"><a href="insights.html"><img class="topbtmimg" src="images/Insightsbtn.png" alt=""></a></li>
-    <li class="Topbutton" style="float:right"><a href="Map page.html"><img class="topbtmimg" src="images/Mapbtm.png" alt=""></a></li>
+    <li class="Topbutton" style="float:right"><a href="index.html"><img class="topbtmimg" src="images/Mapbtm.png" alt=""></a></li>
   </ul>
 
   <!-- Map display -->
@@ -43,7 +43,7 @@
     <!-- echart bar chart -->
     <ul class="sidebar">
       <!-- Hide bar chart -->
-      <li class="sidebtn" style="float:right"><img id="hidebtn" src="images/listbutton2.png" alt="" onclick="displaybarcharts()"></li>
+      <li class="sidebtn" style="float:left"><img id="hidebtn" src="images/listbutton2.png" alt="" onclick="displaybarcharts()"></li>
       <!-- bar chart -->
       <li id="barchart111"><div id="barchart"></div></li>
     </ul>
