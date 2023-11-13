@@ -291,12 +291,12 @@ function displaybarcharts() {
         chart.style.display = "block";
         //Change button image
         buttonimg.src = "images/listbutton2.png";
-        chartbox.style.width = "100%";
+        chartbox.style.height = "50%";
         //chartbox.style.height = "50px";
     } else {
         chart.style.display = "none";
         buttonimg.src = "images/listbutton1.png";
-        chartbox.style.width = "50px";
+        chartbox.style.height = "50px";
     }
 }
 
