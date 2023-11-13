@@ -87,23 +87,11 @@ li a:hover,
 }
 
 
-.sidebar{
-  /* position: fixed; */
-  /* top: 50%;
-  right: 0;
-  
-  /* position: relative; */
-  padding-top: 10%;
-  float: right;
-  text-align: center;
-  list-style-type: none;
-  margin: 0;
-  /* padding: 0; */
-}
+
 #barchart111{
   /* margin-top: 50px; */
   width: 400px;
-  height: 600px;
+  height: 100%;
   float: right;
 }
 #barchart{
@@ -130,6 +118,17 @@ li a:hover,
   font-size: 30px;
 }
 @media screen and (min-width: 600px) {
+  .sidebar{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(-0%, -50%);
+    text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 50%;
+  }
   li.dropdown {
     display: none;
   }
