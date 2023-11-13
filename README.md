@@ -19,4 +19,6 @@ The top of the map page is a responsive navigation bar made with <ul>
     <li class="Topbutton" style="float:right"><a href="index.html"><img class="topbtmimg" src="images/Mapbtm.png" alt=""></a></li>
   </ul>
 ```
+### Map display
+
  
