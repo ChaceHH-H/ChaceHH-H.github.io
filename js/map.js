@@ -260,6 +260,19 @@ function displaylist(data) {
 //Click the bar to zoom to the area location
 displaychart.on('click', function (params) {
     //Filter geojson data
+    map.flyTo({
+        center: [-0.1,51.5],
+        zoom: 9,
+        speed: 4, 
+     });
+
+     setTimeout(function() { zommtoarea(params); }, 1000);
+})
+//When the mouse is hovering over bar, highlighted area on map
+displaychart.on('mouseover',function(params){
+    map.setFilter('area-tree-layer-highlighted', ['in', 'wardname', params.name]);
+})
+function zommtoarea(params){
     var features = map.querySourceFeatures('area-tree', {
         sourceLayer: 'area-tree-layer',
         filter: ["==", 'wardname', params.name]
@@ -276,11 +289,7 @@ displaychart.on('click', function (params) {
     var description = ("Area name: " + features[0].properties.wardname + '<br>' + "Coverage: " + features[0].properties.percancov + " %"+ '<br>' + "survyear: " +features[0].properties.survyear + '<br>' + "warea: "+features[0].properties.warea+" m<sup>2</sup>");
     document.getElementById("popup").innerHTML = description;
     map.setFilter('area-tree-layer-highlighted', ['in', 'wardname', params.name]);
-})
-//When the mouse is hovering over bar, highlighted area on map
-displaychart.on('mouseover',function(params){
-    map.setFilter('area-tree-layer-highlighted', ['in', 'wardname', params.name]);
-})
+}
 //button to hide the bar chart
 function displaybarcharts() {
     var chartbox =document.getElementById("sidebarbox");
